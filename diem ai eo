@@ -1,0 +1,41 @@
+def kt(k):
+    if 39<=k<=40:
+        return 9.0
+    elif 37<=k<=38:
+        return 8.5
+    elif 35<=k<=36:
+        return 8.0
+    elif 33<=k<=34:
+        return 7.5
+    elif 30<=k<=32:
+        return 7.0
+    elif 27<=k<=29:
+        return 6.5
+    elif 23<=k<=26:
+        return 6.0
+    elif 20<=k<=22:
+        return 5.5
+    elif 16<=k<=19:
+        return 5.0
+    elif 13<=k<=15:
+        return 4.5
+    elif 10<=k<=12:
+        return 4.0
+    elif 7<=k<=9:
+        return 3.5
+    elif 5<=k<=6:
+        return 3.0
+    elif 3<=k<=4:
+        return 2.5
+def diem(k):
+    if 0.25<=k%1<=0.75:
+        return int(k)+ 0.5
+    elif k%1<=0.25:
+        return int(k)
+    elif k%1>=0.75:
+        return int(k) +1
+for _ in range(int(input())):
+    a,b,c,d=map(float,input().split())
+    dm=(kt(a) + kt(b) + c + d)/4
+    h=float(diem(dm))
+    print(h)
