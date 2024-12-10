@@ -1,0 +1,11 @@
+b=[]# tạo 1 ds dỗng
+for i in range(int(input())):
+    n=input()#nhập tên
+    c,t=[int(i) for i in input().split(' ')]
+    #nhập c là số bài làm đúng ,t là số bài sumbit
+    b.append((n,c,t))
+b.sort(key=lambda i:(-i[1],i[2],i[0 ]))#xử dụng key chạy gọi hàm
+#xắp xếp số bài làm giảm,tên theo thứ tự,sumbit giảm
+for i in b:
+    print(f'{i[0]} {i[1]} {i[2]}',sep=' ')
+print()
