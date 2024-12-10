@@ -1,0 +1,7 @@
+def chen_xau(s1,s2,s):
+    n=s1[0:s] + s2 + s1[s:]
+    print(n)
+a=input()
+b=input()
+c=int(input())-1
+chen_xau(a,b,c)
