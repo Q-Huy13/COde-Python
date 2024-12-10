@@ -1,0 +1,9 @@
+a=list()
+b=list()
+for i in range(int(input())):
+    c=input().upper()
+    a.append(c)
+for t in a:
+    if t not in b:
+        b.append(t)
+print(len(b))
