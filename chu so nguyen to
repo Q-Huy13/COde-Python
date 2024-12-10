@@ -1,0 +1,17 @@
+def kt(n):
+    for i in range(2,int(n**0.5)+1):
+        if n%i==0:
+            return False
+    return n>1
+for _ in range(int(input())):
+    n=input()
+    nt=0
+    for j in range(len(n)):
+        if kt(int(n[j])):
+            nt+=1
+    if kt(len(n)) and nt>(len(n)-nt):
+        print('YES')
+    else:
+        print('NO')
+
+
