@@ -1,0 +1,28 @@
+def cung_hoang_dao(a,b):
+    if (b==3 and a>=21) or (b==4 and a<=19):
+        return 'Bach Duong'
+    elif (b==4 and a>=20) or (b==5 and a<=20):
+        return 'Kim Nguu'
+    elif (b==5 and a>=21) or (b==6 and a<=20):
+        return 'Song Tu'
+    elif (b==6 and a>=21) or (b==7 and a<=22):
+        return 'Cu Giai'
+    elif (b==7 and a>=23) or (b==8 and a<=22):
+        return 'Su Tu'
+    elif (b==8 and a>=23) or (b==9 and a<=22):
+        return 'Xu Nu'
+    elif (b==9 and a>=23) or (b==10 and a<=22):
+        return 'Thien Binh'
+    elif (b==10 and a>=23) or (b==11 and a<=22):
+        return 'Thien Yet'
+    elif (b==11 and a>=23) or (b==12 and a<=21):
+        return 'Nhan Ma'
+    elif (b==12 and a>=22) or (b==1 and a<=19):
+        return 'Ma Ket'
+    elif (b==1 and a>=20) or (b==2 and a<=18):
+        return 'Bao Binh'
+    elif (b==2 and a>=19) or (b==3 and a<=20):
+        return 'Song Ngu'
+for i in range(int(input())):
+    c,d=map(int,input().split())
+    print(cung_hoang_dao(c,d))
